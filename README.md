@@ -1,1 +1,2 @@
 # Rider-Cancellation-Prediction
+It consisted of an unbalanced dataset of 450,000 rows with 97:3 being the ratio of non-cancelled data to cancelled data of delivery orders. Most significant improvement was brought by the Class Weights method as it penalised more if got the minority data prediction wrong. Along with that, effective EDA alongwith some data manipulation led us to AUC-ROC score of 0.81 and 0.83 on public and private leaderboards respectively.
