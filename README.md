@@ -10,6 +10,7 @@ focused on order cancellations and factors associated with it. Our analysis is
 generalized over orders and riders, making it applicable to any new order or rider 
 outside of dataset.
  The key questions that this report will answer are:
+ 
 ● What properties of orders and riders indicate cancellation and upto what 
 extent?
 ● How are variables that affect cancellation related with each other?
