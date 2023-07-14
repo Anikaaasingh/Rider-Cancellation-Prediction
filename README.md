@@ -16,9 +16,13 @@ The key objective of this report is to analyze the given dataset and generate in
  # Feature Engineering
 We created some new_features to enhance the analysis:
 -“allot_order_delta”: difference between “allot_time” and “order_time”.
+
 -“accept_allot_delta”: difference between “accept_time” and “allot_time”.
+
 -“pickup_accept_delta”: difference between “pickup_time” and “accept_time”.
+
 -“total_distance”: sum of first mile and last mile distances.
+
 -“delivered_allot_ratio”: ratio of “delivered_orders” and “alloted_orders”.
 
 # Methodolgy
