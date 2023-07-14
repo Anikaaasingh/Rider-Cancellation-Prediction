@@ -9,26 +9,25 @@ to figure out correlations between variables in the dataset. The analysis will b
 focused on order cancellations and factors associated with it. Our analysis is 
 generalized over orders and riders, making it applicable to any new order or rider 
 outside of dataset.
- The key questions that this report will answer are:
- 
-● What properties of orders and riders indicate cancellation and upto what 
+ The key questions that this report will answer are: 
+- What properties of orders and riders indicate cancellation and upto what 
 extent?
-● How are variables that affect cancellation related with each other?
+-How are variables that affect cancellation related with each other?
 
  # Feature Engineering
 We created some new_features to enhance the analysis:
-● “allot_order_delta”: difference between “allot_time” and “order_time”.
-● “accept_allot_delta”: difference between “accept_time” and “allot_time”.
-● “pickup_accept_delta”: difference between “pickup_time” and “accept_time”.
-● “total_distance”: sum of first mile and last mile distances.
-● “delivered_allot_ratio”: ratio of “delivered_orders” and “alloted_orders”.
+-“allot_order_delta”: difference between “allot_time” and “order_time”.
+-“accept_allot_delta”: difference between “accept_time” and “allot_time”.
+-“pickup_accept_delta”: difference between “pickup_time” and “accept_time”.
+-“total_distance”: sum of first mile and last mile distances.
+-“delivered_allot_ratio”: ratio of “delivered_orders” and “alloted_orders”.
 
 # Methodolgy
-● As the analysis is focused on cancellations, it makes sense to study how many cancellations are made subject to certain conditions and compare them with how 
+-As the analysis is focused on cancellations, it makes sense to study how many cancellations are made subject to certain conditions and compare them with how 
 many deliveries are made under same conditions. We define a variable named “cancellation_rate” defined as the probability that a randomly sampled order from the 
 dataset under some condition S on variable X was cancelled :
 Cancellation Rate=P(cancelled|X(s)
-● We use this methodology throughout the report to analyze how the variables in dataset affect cancellation. It is very important to note that cancellation rate is very sensitive to the denominator, say there is a certain condition on a variable that is satisfied by only one sample in the dataset and if that one sample turns out to be a cancelled order then cancellation rate is simply 100% which is absurd. So for an inference based on cancellation rate to be statistically significant, total number of samples satisfying the given condition must be sufficiently large, we chose this minimum limit as 100. The report only contains statistically significant inferences.
+-We use this methodology throughout the report to analyze how the variables in dataset affect cancellation. It is very important to note that cancellation rate is very sensitive to the denominator, say there is a certain condition on a variable that is satisfied by only one sample in the dataset and if that one sample turns out to be a cancelled order then cancellation rate is simply 100% which is absurd. So for an inference based on cancellation rate to be statistically significant, total number of samples satisfying the given condition must be sufficiently large, we chose this minimum limit as 100. The report only contains statistically significant inferences.
 
 # Rider Analysis:
 In this we analyzed the rider specific variables and their relation with cancellation. We have a figure below for a quick overview of rider related variables 
