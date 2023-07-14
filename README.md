@@ -1,18 +1,17 @@
 # Rider-Cancellation-Prediction
 It consisted of an unbalanced dataset of 450,000 rows with 97:3 being the ratio of non-cancelled data to cancelled data of delivery orders.
+
 Most significant improvement was brought by the Class Weights method as it penalised more if got the minority data prediction wrong. 
+
 Along with that, effective EDA alongwith some data manipulation led us to AUC-ROC score of 0.81 and 0.83 on public and private leaderboards respectively.
 
 # Objectives
-The key objective of this report is to analyze the given dataset and generate insights 
-to figure out correlations between variables in the dataset. The analysis will be largely 
-focused on order cancellations and factors associated with it. Our analysis is 
-generalized over orders and riders, making it applicable to any new order or rider 
-outside of dataset.
+The key objective of this report is to analyze the given dataset and generate insights to figure out correlations between variables in the dataset. The analysis will be largely focused on order cancellations and factors associated with it. Our analysis is generalized over orders and riders, making it applicable to any new order or rider outside of dataset.
+
  The key questions that this report will answer are: 
-- What properties of orders and riders indicate cancellation and upto what 
-extent?
--How are variables that affect cancellation related with each other?
+- What properties of orders and riders indicate cancellation and upto what extent?
+  
+- How are variables that affect cancellation related with each other?
 
  # Feature Engineering
 We created some new_features to enhance the analysis:
