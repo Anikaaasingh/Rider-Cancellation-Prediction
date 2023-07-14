@@ -27,6 +27,7 @@ We created some new_features to enhance the analysis:
 many deliveries are made under same conditions. We define a variable named “cancellation_rate” defined as the probability that a randomly sampled order from the 
 dataset under some condition S on variable X was cancelled :
 Cancellation Rate=P(cancelled|X(s)
+
 -We use this methodology throughout the report to analyze how the variables in dataset affect cancellation. It is very important to note that cancellation rate is very sensitive to the denominator, say there is a certain condition on a variable that is satisfied by only one sample in the dataset and if that one sample turns out to be a cancelled order then cancellation rate is simply 100% which is absurd. So for an inference based on cancellation rate to be statistically significant, total number of samples satisfying the given condition must be sufficiently large, we chose this minimum limit as 100. The report only contains statistically significant inferences.
 
 # Rider Analysis:
